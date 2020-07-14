@@ -120,8 +120,11 @@ console.log(metricConv(5))
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
-
+  function feetToCm (feet){
+      let cm = 30.48
+      return feet * cm
+  }
+console.log(feetToCm(5))
 
 
 
