@@ -105,15 +105,49 @@ function dogFeeder(weight,age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-function game(){
-    let max = 2
-    let randomNumbers = Math.round(Math.random()*max)
-    return randomNumbers
-}  
-console.log(game())
 
-  
+let userChoice = function(myChoice){
+    if(myChoice==='rock'){
+        return 'rock'
+    } else if (myChoice==='paper'){
+        return 'paper'
+    } else{
+        return 'sissors'
+    }
+}
+// console.log(userChoice())
 
+
+
+    let computerChoice = Math.round(Math.random())
+    if (computerChoice < 0.34){
+        computerChoice = 'rock'
+    } else if (computerChoice < 0.67){
+        computerChoice ='paper'
+    } else{
+        computerChoice = 'sissors'
+    }
+
+// console.log (computer())
+
+function winner(userChoice, computer){
+    if (userChoice===computer){
+        return 'Tie!'
+    } else if (userChoice=== 'rock' && computer ==='paper'){
+        return 'You Lose!'
+    } else if (userChoice === 'rock' && computer === 'sissors'){
+        return 'You Win!'
+    } else if (userChoice=== 'paper' && computer ==='sissors'){
+        return 'You Lose!'
+    } else if (userChoice === 'paper' && computer === 'rock'){
+        return 'You Win!'
+    } else if (userChoice=== 'sissors' && computer ==='rock'){
+        return 'You Lose!'
+    } else if (userChoice === 'sissors' && computer === 'paper'){
+        return 'You Win!'
+    }
+}
+console.log(winner('paper', computerChoice))
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
@@ -140,12 +174,12 @@ console.log(feetToCm(5))
 
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, 
 // (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
-function annoyingSong(number){
 
-}
-
-
+// function annoyingSong(number){
+//     for (i = number; i > 0; i--)
+//     console.log(i+' bottles of soda on the wall,')(+ i +)' bottles of soda, take one down pass it around'+(i-1)+' bottles of soda on the wall'
+// }
+// annoyingSong(4)
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
@@ -167,7 +201,7 @@ function annoyingSong(number){
         return 'F'
     }
   }
-console.log(grades(90))
+console.log(grades(77))
   
   
 
