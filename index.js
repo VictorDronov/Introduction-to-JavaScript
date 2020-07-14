@@ -105,7 +105,13 @@ function dogFeeder(weight,age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+function game(){
+    let max = 2
+    let randomNumbers = Math.round(Math.random()*max)
+    return randomNumbers
+}  
+console.log(game())
+
   
 
 /************************************************************** Task 5 **************************************************************/
