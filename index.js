@@ -11,11 +11,13 @@ if (votingAge>=18){
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-const food = 'pizza'
+let food = 'pizza'
 if (food === 'pizza'){
     console.log('Pizza is good!')
-} else {
+} else if('beans'){
     console.log('This food will not do!')
+}else{
+    console.log('I shall starve!')
 }
 
 
@@ -66,10 +68,36 @@ console.log(myAge(20*7))
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function dogFeeder(weight,age){
+    if(weight <= 5 && age >=1){
+        return weight/age*0.05
+    }else if (weight === 6 && age >=1){
+        return weight/age*0.04
+    }else if (weight === 7 && age >=1){
+        return weight/age*0.04
+    } else if (weight === 8 && age >=1){
+        return weight/age*0.04
+    } else if (weight === 9 && age >=1){
+        return weight/age*0.04
+    } else if (weight === 10 && age >=1){
+        return weight/age*0.04
+    } else if (weight === 11 && age >=1){
+        return weight/age*0.03
+    } else if (weight === 12 && age >=1){
+        return weight/age*0.03
+    } else if (weight === 13 && age >=1){
+        return weight/age*0.03
+    } else if (weight === 14 && age >=1){
+        return weight/age*0.03
+    } else if (weight === 15 && age >=1){
+        return weight/age*0.03
+    } else if (weight > 15 && age >=1){
+        return weight/age*0.02
+    } 
+}
+    console.log(dogFeeder(15,1))
 
-
-
-
+    
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
