@@ -96,8 +96,8 @@ function dogFeeder(weight,age){
     } 
 }
     console.log(dogFeeder(15,1))
+// I feel like there is a better way of doing this. 
 
-    
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
@@ -112,8 +112,11 @@ function dogFeeder(weight,age){
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function metricConv (mile){
+    let km = 1.60934
+    return mile * km
+}
+console.log(metricConv(5))
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
