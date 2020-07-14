@@ -175,11 +175,12 @@ console.log(feetToCm(5))
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, 
 // (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
-// function annoyingSong(number){
-//     for (i = number; i > 0; i--)
-//     console.log(i+' bottles of soda on the wall,')(+ i +)' bottles of soda, take one down pass it around'+(i-1)+' bottles of soda on the wall'
-// }
-// annoyingSong(4)
+function annoyingSong(number){
+    for (i = number; i > 0; i--)
+    console.log(i+' bottles of soda on the wall, '+ ( i )+' bottles of soda, take one down pass it around '+(i-1)+' bottles of soda on the wall')
+}
+annoyingSong(4)
+
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
