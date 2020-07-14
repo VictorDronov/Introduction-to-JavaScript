@@ -1,7 +1,7 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
+var votingAge = 18
 
 
 
@@ -18,8 +18,10 @@
 
 
 //Task d: Write a function to multiply a*b 
-
-
+function multi (num1,num2){
+    return num1*num2
+}
+console.log(multi(5,2))
 
 
 
