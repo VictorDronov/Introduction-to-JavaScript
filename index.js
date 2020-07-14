@@ -2,22 +2,33 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
 var votingAge = 18
-
+if (votingAge>=18){
+    console.log('true')
+}else{
+    console.log('false')
+}
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
+const food = 'pizza'
+if (food === 'pizza'){
+    console.log('Pizza is good!')
+} else {
+    console.log('This food will not do!')
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
+var string = '1999'
+var convert = parseInt(string)
+console.log(convert)
 
 
 //Task d: Write a function to multiply a*b 
+
 function multi (num1,num2){
     return num1*num2
 }
@@ -29,6 +40,10 @@ console.log(multi(5,2))
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+function myAge (age){
+    return age
+}
+console.log(myAge(20*7))
 
 
 
