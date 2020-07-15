@@ -105,49 +105,51 @@ function dogFeeder(weight,age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+// YOu picking 
+// let userChoice = function(){
+//     let myChoice = prompt('rock, paper, sissors')
+//     if(myChoice==='rock'){
+//         return 'rock'
+//     } else if (myChoice==='paper'){
+//         return 'paper'
+//     } else{
+//         return 'sissors'
+//     }
+// }
+// // console.log(userChoice())
 
-let userChoice = function(myChoice){
-    if(myChoice==='rock'){
-        return 'rock'
-    } else if (myChoice==='paper'){
-        return 'paper'
-    } else{
-        return 'sissors'
-    }
-}
-// console.log(userChoice())
+// // Computer picking 
 
+//     let computerChoice = Math.random()
+//     if (computerChoice < 0.34){
+//         computerChoice = 'rock'
+//     } else if (computerChoice < 0.67){
+//         computerChoice ='paper'
+//     } else{
+//         computerChoice = 'sissors'
+//     }
 
-
-    let computerChoice = Math.round(Math.random())
-    if (computerChoice < 0.34){
-        computerChoice = 'rock'
-    } else if (computerChoice < 0.67){
-        computerChoice ='paper'
-    } else{
-        computerChoice = 'sissors'
-    }
-
-// console.log (computer())
-
-function winner(userChoice, computer){
-    if (userChoice===computer){
-        return 'Tie!'
-    } else if (userChoice=== 'rock' && computer ==='paper'){
-        return 'You Lose!'
-    } else if (userChoice === 'rock' && computer === 'sissors'){
-        return 'You Win!'
-    } else if (userChoice=== 'paper' && computer ==='sissors'){
-        return 'You Lose!'
-    } else if (userChoice === 'paper' && computer === 'rock'){
-        return 'You Win!'
-    } else if (userChoice=== 'sissors' && computer ==='rock'){
-        return 'You Lose!'
-    } else if (userChoice === 'sissors' && computer === 'paper'){
-        return 'You Win!'
-    }
-}
-console.log(winner('paper', computerChoice))
+// // console.log (computerChoice)
+// // Determining the winner
+// function winner(userChoice, computer){
+//     if (userChoice===computer){
+//         return 'Tie!'
+//     } else if (userChoice=== 'rock' && computer ==='paper'){
+//         return 'You Lose!'
+//     } else if (userChoice === 'rock' && computer === 'sissors'){
+//         return 'You Win!'
+//     } else if (userChoice=== 'paper' && computer ==='sissors'){
+//         return 'You Lose!'
+//     } else if (userChoice === 'paper' && computer === 'rock'){
+//         return 'You Win!'
+//     } else if (userChoice=== 'sissors' && computer ==='rock'){
+//         return 'You Lose!'
+//     } else if (userChoice === 'sissors' && computer === 'paper'){
+//         return 'You Win!'
+//     }
+// }
+// // console.log(winner('paper', computerChoice))
+// console.log(winner(userChoice(), computerChoice))
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
@@ -221,5 +223,48 @@ console.log(grades(77))
 
 
 
+let userChoice = function(){
+    let myChoice = prompt('rock, paper, sissors')
+    if(myChoice==='rock'){
+        return 'rock'
+    } else if (myChoice==='paper'){
+        return 'paper'
+    } else{
+        return 'sissors'
+    }
+}
+// console.log(userChoice())
 
+// Computer picking 
+
+    let computerChoice = Math.random()
+    if (computerChoice < 0.34){
+        computerChoice = 'rock'
+    } else if (computerChoice < 0.67){
+        computerChoice ='paper'
+    } else{
+        computerChoice = 'sissors'
+    }
+
+// console.log (computerChoice)
+// Determining the winner
+function winner(userChoice, computer){
+    if (userChoice===computer){
+        return 'Tie!'
+    } else if (userChoice=== 'rock' && computer ==='paper'){
+        return 'You Lose!'
+    } else if (userChoice === 'rock' && computer === 'sissors'){
+        return 'You Win!'
+    } else if (userChoice=== 'paper' && computer ==='sissors'){
+        return 'You Lose!'
+    } else if (userChoice === 'paper' && computer === 'rock'){
+        return 'You Win!'
+    } else if (userChoice=== 'sissors' && computer ==='rock'){
+        return 'You Lose!'
+    } else if (userChoice === 'sissors' && computer === 'paper'){
+        return 'You Win!'
+    }
+}
+// console.log(winner('paper', computerChoice))
+document.getElementById('results').innerHTML = winner(userChoice(), computerChoice)
 
