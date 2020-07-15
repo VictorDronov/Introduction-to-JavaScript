@@ -224,7 +224,10 @@ console.log(grades(77))
 
 
 let userChoice = function(){
-    let myChoice = prompt('rock, paper, sissors')
+    let myChoice = prompt('rock, paper, sissors') 
+    if (myChoice != null || myChoice === ""){
+    document.getElementById('results').innerHTML = winner(myChoice, computerChoice)
+    }
     if(myChoice==='rock'){
         return 'rock'
     } else if (myChoice==='paper'){
@@ -264,7 +267,8 @@ function winner(userChoice, computer){
     } else if (userChoice === 'sissors' && computer === 'paper'){
         return 'You Win!'
     }
+    
 }
 // console.log(winner('paper', computerChoice))
-document.getElementById('results').innerHTML = winner(userChoice(), computerChoice)
+// document.getElementById('results').innerHTML = winner(userChoice(), computerChoice)
 
